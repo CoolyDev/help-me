@@ -1,4 +1,4 @@
-package com.cf.helpMe.jwtControler;
+package com.cf.helpMe.RestControler;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -9,22 +9,22 @@
 
     <changeSet author="admin" id="1">
         <createTable tableName="users">
-            <column name="email" type="VARCHAR(255)">
+            <column name="email" type="VARCHAR(80)">
                 <constraints primaryKey="true"/>
             </column>
             <column name="password" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
-             <column name="username" type="VARCHAR(255))">
-                <constraints nullable="false"/>
-            </column>
-            <column name="contry" type="VARCHAR(255)">
+             <column name="username" type="VARCHAR(30))">
                 <constraints nullable="true"/>
             </column>
-            <column name="school" type="VARCHAR(255)">
+            <column name="country" type="VARCHAR(30)">
                 <constraints nullable="true"/>
             </column>
-            <column name="level" type="VARCHAR(255)">
+            <column name="school" type="VARCHAR(30)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="level" type="VARCHAR(10)">
                 <constraints nullable="true"/>
             </column>
         </createTable>

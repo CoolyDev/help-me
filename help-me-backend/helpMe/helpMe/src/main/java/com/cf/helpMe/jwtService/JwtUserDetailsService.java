@@ -1,6 +1,7 @@
 package com.cf.helpMe.jwtService;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -26,7 +27,7 @@ public class JwtUserDetailsService implements UserDetailsService{
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		DAOUser user = userDao.findByUsername(username);
 		if (user == null) {
-			throw new UsernameNotFoundException("User not found with email: " + username);
+			throw new UsernameNotFoundException("User not found with username: " + username);
 		}
 		return new org.springframework.security.core.userdetails.User(user.getUsername(),user.getPassword(),new ArrayList<>());
 	}
@@ -42,5 +43,17 @@ public class JwtUserDetailsService implements UserDetailsService{
 		newUser.setLevel(user.getLevel());
 		
 		return userDao.save(newUser);
+	}
+	
+	public void delete(String username) {
+		userDao.deleteByUsername(username);
+	}
+	
+	public DAOUser findUserByUsername(String username) {
+		return userDao.findByUsername(username);
+	}
+	
+	public List<DAOUser> findAllUser() {
+		return userDao.findAll();
 	}
 }
