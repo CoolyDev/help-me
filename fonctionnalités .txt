@@ -1,0 +1,55 @@
+********** fonctionnalités de l'application *************
+
+Première version :
+**********************************
+
+Objectif : 
+	 - publier des sujets 
+      	 - commenter 
+	 - liker
+	 - partager
+	 - création de groupe
+
+I) CRUD profile
+	1) Nom et prénom
+	2) email
+	3) Password
+	3) pays
+	4) établissement et niveau scolaire
+	5) préférences de matières        ********************* A revoir ***************
+
+II) fonctionnalités sans création de compte :
+	1) Consultation des sujets (filtrage par matière)
+	2) accès au forum (fil de discussion)
+	3) Recherche d'un utilisateur (par son nom et prénom ou par matière)
+
+III)fonctionnalités avec création de compte :
+	1) commenter dans le forum (Modification,suppression)
+	2) Liker un post
+	3) demander de l'aide dans le forum (Modification, suppression)
+	4) ajouter des sujets
+		a) choix de matière
+	5) contacter un utilisateur précis
+
+*****	6) créer un groupe
+*****	7) rejoindre un groupe
+
+***** IV) Création de groupe (groupe whatsapp)
+	1) nom du groupe
+	2) stockage de postes et liens (exemple whatsap)
+
+V) ENVIRONNEMENT ET OUTILS
+	1) Front: fluter
+	2) Back: Java SpringBoot
+	3) BD: postgré
+	4) Serveur mail: ?
+	
+
+Deuxième version: 
+**********************************
+
+I) fonctionnalités sans création de compte :
+
+
+II)fonctionnalités avec création de compte :
+	1) partager (Modification, suppression)
